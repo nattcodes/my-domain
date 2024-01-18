@@ -1,0 +1,17 @@
+<div class="country-info " *ngIf="countryName | async; let country">
+    <div class=" details ">
+        <div class="detail-img "><img [src]="country.flags.png"></div>
+        <div class="info-content ">
+            <h2>{{country.name.common}}</h2>
+            <div class="card-others ">
+                <h4><span class="country-span ">official Name: </span>{{country.name.official}}</h4>
+                <h4><span class="country-span ">Population: </span>{{country.population.toLocaleString()}} </h4>
+                <h4><span class="country-span ">Region: </span>{{country.region}}</h4>
+                <h4><span class="country-span ">Capital: </span>{{country.capital}}</h4>
+                <h4><span class="country-span ">Currency: </span>{{ country.currencies.USD}}</h4>
+                <h4><span class="country-span ">Language: </span>{{country.languages.eng}}</h4>
+                <h4><span class="country-span ">Sub-Region: </span>{{country.subregion}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

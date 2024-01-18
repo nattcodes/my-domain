@@ -1,0 +1,82 @@
+.country-info {
+    margin: 5% 10%;
+    padding-bottom: 3rem;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: rgb(35, 35, 35);
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.825);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+}
+
+.info-content {
+    margin-right: 10%;
+}
+
+.card-others h4 {
+    margin: 1rem 0;
+    font-size: .8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.616);
+}
+
+.card-others h4 .country-span {
+    margin: 1rem 0;
+    font-size: .8rem;
+    font-weight: 400;
+    color: rgb(121, 254, 225);
+}
+
+@media (max-width: 990px) {
+    img {
+        width: 400px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 900px) {
+    img {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 365px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 450px) {
+    img {
+        width: 325px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 430px) {
+    img {
+        width: 295px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 400px) {
+    img {
+        width: 265px;
+        height: 230px;
+    }
+}

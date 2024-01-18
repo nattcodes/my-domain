@@ -1,0 +1,131 @@
+.home {
+    height: 100vh;
+    width: 100%;
+    padding: 0 3rem;
+}
+
+.home-search {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.home-search {
+    border: none;
+    outline: none;
+}
+
+input[type="text"] {
+    width: 30%;
+    outline: none;
+    margin-right: 5rem;
+    padding: .5rem;
+    background-color: rgb(35, 35, 35);
+    border: none;
+    color: white;
+}
+
+.home-search select {
+    outline: none;
+    background-color: rgb(35, 35, 35);
+    border: none;
+    color: rgb(121, 254, 225);
+    padding: 0 .5rem;
+}
+
+.home-search select option {
+    outline: none;
+    border: none;
+    color: rgb(121, 254, 225);
+    padding: 0 .5rem;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 2rem;
+}
+
+.country .country-card {
+    background: rgb(35, 35, 35);
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.825);
+    height: 100%;
+}
+
+.country .country-card:hover {
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.908);
+    transition: ease-in-out;
+}
+
+.country-card img {
+    height: 180px;
+    width: 100%;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+
+.card .card-others {
+    font-size: .7rem;
+}
+
+.card .card-others h4 {
+    font-weight: 400;
+}
+
+.country .country-card,
+.country-card img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding: .4rem;
+}
+
+@media (max-width: 990px) {
+    .country {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 35px;
+    }
+}
+
+@media (max-width: 900px) {
+    input[type="text"] {
+        width: 50%;
+        margin-right: 0;
+        padding: .3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .country {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 35px;
+    }
+}
+
+@media (max-width: 450px) {
+    .home-search {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        padding: .3rem;
+    }
+    .home-search select {
+        font-size: .8rem;
+        margin: 1rem 0;
+        padding: .3rem .5rem;
+    }
+}
